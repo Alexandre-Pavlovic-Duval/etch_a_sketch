@@ -1,0 +1,32 @@
+.mainDiv {
+    border: 3px solid red;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.contentDiv {
+    border: 3px solid blueviolet;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.containerButton {
+    border: 3px solid blue;
+}
+
+.gridDiv {
+    border: 3px solid rgb(58, 54, 62);
+    margin-top: 100px;
+}
+
+.grid {
+    border: 3px red solid;
+    height: 40px;
+    width: 40px;
+}
