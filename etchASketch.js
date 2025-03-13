@@ -12,6 +12,7 @@ contentDiv.appendChild(containerButton);
 
 const choiceButton = document.createElement("button");
 choiceButton.innerText = "Choose your grid";
+choiceButton.classList.add("choiceButton");
 containerButton.appendChild(choiceButton);
 
 const gridDiv = document.createElement("div");
@@ -31,3 +32,18 @@ gridElements.forEach((grid) => {
         grid.classList.add("black");
     });
 });
+
+const buttonChoiceGrid = document.querySelector(".choiceButton");
+
+const handleSize = (sizeChoosed) => {
+    document.getElementsByClassName("grid").style.height = sizeChoosed / 100;
+    document.getElementsByClassName("grid").style.width = sizeChoosed / 100;
+};
+
+buttonChoiceGrid.addEventListener("click", () => {
+    let size = prompt("Choose your grid size");
+    handleSize(size);
+});
+
+// Vérifier que size ne soit pas un float ou un  texte (qu'il soit onvetible en int)
+// sinon reprompt
