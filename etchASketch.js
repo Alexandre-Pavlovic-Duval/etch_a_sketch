@@ -18,8 +18,16 @@ const gridDiv = document.createElement("div");
 gridDiv.classList.add("gridDiv");
 contentDiv.append(gridDiv);
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 256; i++) {
     const grid = document.createElement("div");
     grid.classList.add("grid");
     gridDiv.appendChild(grid);
 }
+
+const gridElements = document.querySelectorAll(".grid");
+
+gridElements.forEach((grid) => {
+    grid.addEventListener("mouseover", () => {
+        grid.classList.add("black");
+    });
+});

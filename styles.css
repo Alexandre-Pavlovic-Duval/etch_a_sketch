@@ -1,5 +1,4 @@
 .mainDiv {
-    border: 3px solid red;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,7 +6,6 @@
 }
 
 .contentDiv {
-    border: 3px solid blueviolet;
     height: 600px;
     width: 600px;
     display: flex;
@@ -16,9 +14,9 @@
     justify-content: flex-start;
 }
 
-.containerButton {
+/* .containerButton {
     border: 3px solid blue;
-}
+} */
 
 .gridDiv {
     border: 3px solid rgb(58, 54, 62);
@@ -30,8 +28,16 @@
 }
 
 .grid {
-    border: 3px red solid;
-    height: 25%;
-    width: 25%;
+    border: 3px rgba(92, 99, 95, 0.573) solid;
+    height: 6.25%;
+    width: 6.25%;
     box-sizing: border-box;
+}
+
+.grid:hover {
+    background: black;
+}
+
+.grid.black {
+    background: black;
 }
